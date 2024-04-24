@@ -34,7 +34,6 @@ Output:
 '''
 def covering_segments(segments_arr):
 	segments_arr.sort(key=lambda x: x[1])
-	print((segments_arr))
 	positions = []
 	right_most =  segments_arr[0][1]
 	for i in range(1, len(segments_arr)):
