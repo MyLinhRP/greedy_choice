@@ -45,7 +45,7 @@ def covering_segments(segments_arr):
 		else:
 			positions.append(right_most)
 			right_most= segments_arr[i][1]
-	if positions not in range(segments_arr[-1][0], segments_arr[-1][1]+1):
+	if right_most not in range(segments_arr[-1][0], segments_arr[-1][1]+1):
 		positions.append(right_most)
 	return positions
 if __name__ == '__main__':
